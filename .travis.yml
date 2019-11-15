@@ -6,6 +6,6 @@ node_js:
 deploy:
   provider: script
   script: yarn install && yarn run deploy
-  skip_cleanup: true
+  cleanup: skip
   on:
     branch: master
